@@ -1,0 +1,540 @@
+{
+  "data": [
+    [
+      [
+        1,
+        "{\"task_id\": \"3c9b7185-9612-11ee-ae96-8c8d28aac698\"}",
+        0,
+        0.0
+      ],
+      [
+        0.24614563515495083,
+        4.9371466636657715,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1702071558.144736,
+        1702071563.1008384,
+        {
+          "duration": 4.767676115036011,
+          "num_run": 2,
+          "train_loss": 0.03191570154064962,
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        2,
+        "{\"task_id\": \"3c9b7185-9612-11ee-ae96-8c8d28aac698\"}",
+        0,
+        0.0
+      ],
+      [
+        0.34458959606399847,
+        18.48354434967041,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1702071563.137643,
+        1702071581.6502047,
+        {
+          "duration": 18.167393922805786,
+          "num_run": 3,
+          "train_loss": 0.20774566590271368,
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        3,
+        "{\"task_id\": \"3c9b7185-9612-11ee-ae96-8c8d28aac698\"}",
+        0,
+        0.0
+      ],
+      [
+        0.12350033984024023,
+        2.727576494216919,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1702071581.7672765,
+        1702071584.515446,
+        {
+          "duration": 2.589545249938965,
+          "num_run": 4,
+          "train_loss": 0.006050871709522721,
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        4,
+        "{\"task_id\": \"3c9b7185-9612-11ee-ae96-8c8d28aac698\"}",
+        0,
+        0.0
+      ],
+      [
+        1.0,
+        0.5436427593231201,
+        {
+          "__enum__": "StatusType.CRASHED"
+        },
+        1702071584.6008794,
+        1702071585.1617043,
+        {
+          "traceback": "Traceback (most recent call last):\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/__init__.py\", line 55, in fit_predict_try_except_decorator\n    return ta(queue=queue, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 1407, in eval_cv\n    evaluator.fit_predict_and_loss(iterative=iterative)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 535, in fit_predict_and_loss\n    ) = self._partial_fit_and_predict_standard(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 900, in _partial_fit_and_predict_standard\n    _fit_and_suppress_warnings(self.logger, model, X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/abstract_evaluator.py\", line 188, in _fit_and_suppress_warnings\n    model.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 124, in fit\n    X, fit_params = self.fit_transformer(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 136, in fit_transformer\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 756, in _fit_transform_one\n    res = transformer.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/base.py\", line 473, in fit\n    return self.choice.fit(X, y, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/feature_type.py\", line 216, in fit\n    self.column_transformer.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 471, in fit\n    self.fit_transform(X, y=y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 508, in fit_transform\n    result = self._fit_transform(X, y, _fit_transform_one)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 435, in _fit_transform\n    return Parallel(n_jobs=self.n_jobs)(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1863, in __call__\n    return output if self.return_generator else list(output)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1792, in _get_sequential_output\n    res = func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/utils/fixes.py\", line 222, in __call__\n    return self.function(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 378, in fit_transform\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/base.py\", line 702, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/imputation/numerical_imputation.py\", line 30, in fit\n    self.preprocessor.fit(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 322, in fit\n    self.statistics_ = self._dense_fit(X,\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 412, in _dense_fit\n    most_frequent[i] = _most_frequent(row, np.nan, 0)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 50, in _most_frequent\n    most_frequent_value = mode[0][0]\nIndexError: invalid index to scalar variable.\n",
+          "error": "IndexError('invalid index to scalar variable.')",
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        5,
+        "{\"task_id\": \"3c9b7185-9612-11ee-ae96-8c8d28aac698\"}",
+        0,
+        0.0
+      ],
+      [
+        1.0,
+        0.5585019588470459,
+        {
+          "__enum__": "StatusType.CRASHED"
+        },
+        1702071585.195086,
+        1702071585.7702067,
+        {
+          "traceback": "Traceback (most recent call last):\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/__init__.py\", line 55, in fit_predict_try_except_decorator\n    return ta(queue=queue, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 1407, in eval_cv\n    evaluator.fit_predict_and_loss(iterative=iterative)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 535, in fit_predict_and_loss\n    ) = self._partial_fit_and_predict_standard(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 900, in _partial_fit_and_predict_standard\n    _fit_and_suppress_warnings(self.logger, model, X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/abstract_evaluator.py\", line 188, in _fit_and_suppress_warnings\n    model.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 124, in fit\n    X, fit_params = self.fit_transformer(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 136, in fit_transformer\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 756, in _fit_transform_one\n    res = transformer.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/base.py\", line 473, in fit\n    return self.choice.fit(X, y, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/feature_type.py\", line 216, in fit\n    self.column_transformer.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 471, in fit\n    self.fit_transform(X, y=y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 508, in fit_transform\n    result = self._fit_transform(X, y, _fit_transform_one)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 435, in _fit_transform\n    return Parallel(n_jobs=self.n_jobs)(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1863, in __call__\n    return output if self.return_generator else list(output)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1792, in _get_sequential_output\n    res = func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/utils/fixes.py\", line 222, in __call__\n    return self.function(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 378, in fit_transform\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/base.py\", line 702, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/imputation/numerical_imputation.py\", line 30, in fit\n    self.preprocessor.fit(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 322, in fit\n    self.statistics_ = self._dense_fit(X,\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 412, in _dense_fit\n    most_frequent[i] = _most_frequent(row, np.nan, 0)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 50, in _most_frequent\n    most_frequent_value = mode[0][0]\nIndexError: invalid index to scalar variable.\n",
+          "error": "IndexError('invalid index to scalar variable.')",
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        6,
+        "{\"task_id\": \"3c9b7185-9612-11ee-ae96-8c8d28aac698\"}",
+        0,
+        0.0
+      ],
+      [
+        0.8538514988670675,
+        3.110518455505371,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1702071585.8021889,
+        1702071588.940479,
+        {
+          "duration": 2.9862234592437744,
+          "num_run": 7,
+          "train_loss": 0.781842530554253,
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        7,
+        "{\"task_id\": \"3c9b7185-9612-11ee-ae96-8c8d28aac698\"}",
+        0,
+        0.0
+      ],
+      [
+        1.0,
+        0.8798196315765381,
+        {
+          "__enum__": "StatusType.CRASHED"
+        },
+        1702071589.1394887,
+        1702071590.0484972,
+        {
+          "traceback": "Traceback (most recent call last):\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/__init__.py\", line 55, in fit_predict_try_except_decorator\n    return ta(queue=queue, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 1407, in eval_cv\n    evaluator.fit_predict_and_loss(iterative=iterative)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 535, in fit_predict_and_loss\n    ) = self._partial_fit_and_predict_standard(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 900, in _partial_fit_and_predict_standard\n    _fit_and_suppress_warnings(self.logger, model, X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/abstract_evaluator.py\", line 188, in _fit_and_suppress_warnings\n    model.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 124, in fit\n    X, fit_params = self.fit_transformer(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 136, in fit_transformer\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 756, in _fit_transform_one\n    res = transformer.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/base.py\", line 473, in fit\n    return self.choice.fit(X, y, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/feature_type.py\", line 216, in fit\n    self.column_transformer.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 471, in fit\n    self.fit_transform(X, y=y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 508, in fit_transform\n    result = self._fit_transform(X, y, _fit_transform_one)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 435, in _fit_transform\n    return Parallel(n_jobs=self.n_jobs)(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1863, in __call__\n    return output if self.return_generator else list(output)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1792, in _get_sequential_output\n    res = func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/utils/fixes.py\", line 222, in __call__\n    return self.function(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 378, in fit_transform\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/base.py\", line 702, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/imputation/numerical_imputation.py\", line 30, in fit\n    self.preprocessor.fit(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 322, in fit\n    self.statistics_ = self._dense_fit(X,\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 412, in _dense_fit\n    most_frequent[i] = _most_frequent(row, np.nan, 0)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 50, in _most_frequent\n    most_frequent_value = mode[0][0]\nIndexError: invalid index to scalar variable.\n",
+          "error": "IndexError('invalid index to scalar variable.')",
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "{\"task_id\": \"3c9b7185-9612-11ee-ae96-8c8d28aac698\"}",
+        0,
+        0.0
+      ],
+      [
+        1.0,
+        0.5430905818939209,
+        {
+          "__enum__": "StatusType.CRASHED"
+        },
+        1702071590.1067379,
+        1702071590.667367,
+        {
+          "traceback": "Traceback (most recent call last):\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/__init__.py\", line 55, in fit_predict_try_except_decorator\n    return ta(queue=queue, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 1407, in eval_cv\n    evaluator.fit_predict_and_loss(iterative=iterative)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 535, in fit_predict_and_loss\n    ) = self._partial_fit_and_predict_standard(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 900, in _partial_fit_and_predict_standard\n    _fit_and_suppress_warnings(self.logger, model, X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/abstract_evaluator.py\", line 188, in _fit_and_suppress_warnings\n    model.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 124, in fit\n    X, fit_params = self.fit_transformer(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 136, in fit_transformer\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 756, in _fit_transform_one\n    res = transformer.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/base.py\", line 473, in fit\n    return self.choice.fit(X, y, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/feature_type.py\", line 216, in fit\n    self.column_transformer.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 471, in fit\n    self.fit_transform(X, y=y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 508, in fit_transform\n    result = self._fit_transform(X, y, _fit_transform_one)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 435, in _fit_transform\n    return Parallel(n_jobs=self.n_jobs)(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1863, in __call__\n    return output if self.return_generator else list(output)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1792, in _get_sequential_output\n    res = func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/utils/fixes.py\", line 222, in __call__\n    return self.function(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 378, in fit_transform\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/base.py\", line 702, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/imputation/numerical_imputation.py\", line 30, in fit\n    self.preprocessor.fit(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 322, in fit\n    self.statistics_ = self._dense_fit(X,\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 412, in _dense_fit\n    most_frequent[i] = _most_frequent(row, np.nan, 0)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 50, in _most_frequent\n    most_frequent_value = mode[0][0]\nIndexError: invalid index to scalar variable.\n",
+          "error": "IndexError('invalid index to scalar variable.')",
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        9,
+        "{\"task_id\": \"3c9b7185-9612-11ee-ae96-8c8d28aac698\"}",
+        0,
+        0.0
+      ],
+      [
+        1.0,
+        0.8277983665466309,
+        {
+          "__enum__": "StatusType.CRASHED"
+        },
+        1702071590.7000349,
+        1702071591.5547469,
+        {
+          "traceback": "Traceback (most recent call last):\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/__init__.py\", line 55, in fit_predict_try_except_decorator\n    return ta(queue=queue, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 1407, in eval_cv\n    evaluator.fit_predict_and_loss(iterative=iterative)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 535, in fit_predict_and_loss\n    ) = self._partial_fit_and_predict_standard(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 900, in _partial_fit_and_predict_standard\n    _fit_and_suppress_warnings(self.logger, model, X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/abstract_evaluator.py\", line 188, in _fit_and_suppress_warnings\n    model.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 124, in fit\n    X, fit_params = self.fit_transformer(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 136, in fit_transformer\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 756, in _fit_transform_one\n    res = transformer.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/base.py\", line 473, in fit\n    return self.choice.fit(X, y, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/feature_type.py\", line 216, in fit\n    self.column_transformer.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 471, in fit\n    self.fit_transform(X, y=y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 508, in fit_transform\n    result = self._fit_transform(X, y, _fit_transform_one)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 435, in _fit_transform\n    return Parallel(n_jobs=self.n_jobs)(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1863, in __call__\n    return output if self.return_generator else list(output)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1792, in _get_sequential_output\n    res = func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/utils/fixes.py\", line 222, in __call__\n    return self.function(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 378, in fit_transform\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/base.py\", line 702, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/imputation/numerical_imputation.py\", line 30, in fit\n    self.preprocessor.fit(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 322, in fit\n    self.statistics_ = self._dense_fit(X,\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 412, in _dense_fit\n    most_frequent[i] = _most_frequent(row, np.nan, 0)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 50, in _most_frequent\n    most_frequent_value = mode[0][0]\nIndexError: invalid index to scalar variable.\n",
+          "error": "IndexError('invalid index to scalar variable.')",
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        10,
+        "{\"task_id\": \"3c9b7185-9612-11ee-ae96-8c8d28aac698\"}",
+        0,
+        0.0
+      ],
+      [
+        1.0,
+        0.20582127571105957,
+        {
+          "__enum__": "StatusType.CRASHED"
+        },
+        1702071591.6166441,
+        1702071592.5275,
+        {
+          "traceback": "Traceback (most recent call last):\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/__init__.py\", line 55, in fit_predict_try_except_decorator\n    return ta(queue=queue, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 1407, in eval_cv\n    evaluator.fit_predict_and_loss(iterative=iterative)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 535, in fit_predict_and_loss\n    ) = self._partial_fit_and_predict_standard(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 900, in _partial_fit_and_predict_standard\n    _fit_and_suppress_warnings(self.logger, model, X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/abstract_evaluator.py\", line 188, in _fit_and_suppress_warnings\n    model.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 124, in fit\n    X, fit_params = self.fit_transformer(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 136, in fit_transformer\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 756, in _fit_transform_one\n    res = transformer.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/base.py\", line 473, in fit\n    return self.choice.fit(X, y, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/feature_type.py\", line 216, in fit\n    self.column_transformer.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 471, in fit\n    self.fit_transform(X, y=y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 508, in fit_transform\n    result = self._fit_transform(X, y, _fit_transform_one)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 435, in _fit_transform\n    return Parallel(n_jobs=self.n_jobs)(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1863, in __call__\n    return output if self.return_generator else list(output)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1792, in _get_sequential_output\n    res = func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/utils/fixes.py\", line 222, in __call__\n    return self.function(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 378, in fit_transform\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/base.py\", line 702, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/imputation/numerical_imputation.py\", line 30, in fit\n    self.preprocessor.fit(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 322, in fit\n    self.statistics_ = self._dense_fit(X,\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 412, in _dense_fit\n    most_frequent[i] = _most_frequent(row, np.nan, 0)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 50, in _most_frequent\n    most_frequent_value = mode[0][0]\nIndexError: invalid index to scalar variable.\n",
+          "error": "IndexError('invalid index to scalar variable.')",
+          "info": "Run treated as crashed because the pynisher exit status 5 is unknown.",
+          "exit_status": 5,
+          "subprocess_stdout": "",
+          "subprocess_stderr": "",
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        11,
+        "{\"task_id\": \"3c9b7185-9612-11ee-ae96-8c8d28aac698\"}",
+        0,
+        0.0
+      ],
+      [
+        1.0,
+        0.8762600421905518,
+        {
+          "__enum__": "StatusType.CRASHED"
+        },
+        1702071592.5908892,
+        1702071593.499103,
+        {
+          "traceback": "Traceback (most recent call last):\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/__init__.py\", line 55, in fit_predict_try_except_decorator\n    return ta(queue=queue, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 1407, in eval_cv\n    evaluator.fit_predict_and_loss(iterative=iterative)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 535, in fit_predict_and_loss\n    ) = self._partial_fit_and_predict_standard(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 900, in _partial_fit_and_predict_standard\n    _fit_and_suppress_warnings(self.logger, model, X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/abstract_evaluator.py\", line 188, in _fit_and_suppress_warnings\n    model.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 124, in fit\n    X, fit_params = self.fit_transformer(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 136, in fit_transformer\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 756, in _fit_transform_one\n    res = transformer.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/base.py\", line 473, in fit\n    return self.choice.fit(X, y, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/feature_type.py\", line 216, in fit\n    self.column_transformer.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 471, in fit\n    self.fit_transform(X, y=y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 508, in fit_transform\n    result = self._fit_transform(X, y, _fit_transform_one)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 435, in _fit_transform\n    return Parallel(n_jobs=self.n_jobs)(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1863, in __call__\n    return output if self.return_generator else list(output)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1792, in _get_sequential_output\n    res = func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/utils/fixes.py\", line 222, in __call__\n    return self.function(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 378, in fit_transform\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/base.py\", line 702, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/imputation/numerical_imputation.py\", line 30, in fit\n    self.preprocessor.fit(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 322, in fit\n    self.statistics_ = self._dense_fit(X,\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 412, in _dense_fit\n    most_frequent[i] = _most_frequent(row, np.nan, 0)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 50, in _most_frequent\n    most_frequent_value = mode[0][0]\nIndexError: invalid index to scalar variable.\n",
+          "error": "IndexError('invalid index to scalar variable.')",
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        12,
+        "{\"task_id\": \"3c9b7185-9612-11ee-ae96-8c8d28aac698\"}",
+        0,
+        0.0
+      ],
+      [
+        1.0,
+        0.8235783576965332,
+        {
+          "__enum__": "StatusType.CRASHED"
+        },
+        1702071593.5574753,
+        1702071594.4078941,
+        {
+          "traceback": "Traceback (most recent call last):\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/__init__.py\", line 55, in fit_predict_try_except_decorator\n    return ta(queue=queue, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 1407, in eval_cv\n    evaluator.fit_predict_and_loss(iterative=iterative)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 535, in fit_predict_and_loss\n    ) = self._partial_fit_and_predict_standard(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/train_evaluator.py\", line 900, in _partial_fit_and_predict_standard\n    _fit_and_suppress_warnings(self.logger, model, X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/evaluation/abstract_evaluator.py\", line 188, in _fit_and_suppress_warnings\n    model.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 124, in fit\n    X, fit_params = self.fit_transformer(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/base.py\", line 136, in fit_transformer\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 756, in _fit_transform_one\n    res = transformer.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/base.py\", line 473, in fit\n    return self.choice.fit(X, y, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/feature_type.py\", line 216, in fit\n    self.column_transformer.fit(X, y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 471, in fit\n    self.fit_transform(X, y=y)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 508, in fit_transform\n    result = self._fit_transform(X, y, _fit_transform_one)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py\", line 435, in _fit_transform\n    return Parallel(n_jobs=self.n_jobs)(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1863, in __call__\n    return output if self.return_generator else list(output)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/parallel.py\", line 1792, in _get_sequential_output\n    res = func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/utils/fixes.py\", line 222, in __call__\n    return self.function(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 378, in fit_transform\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/joblib/memory.py\", line 353, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/pipeline.py\", line 754, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/base.py\", line 702, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/autosklearn/pipeline/components/data_preprocessing/imputation/numerical_imputation.py\", line 30, in fit\n    self.preprocessor.fit(X)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 322, in fit\n    self.statistics_ = self._dense_fit(X,\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 412, in _dense_fit\n    most_frequent[i] = _most_frequent(row, np.nan, 0)\n  File \"/home/jake/miniconda3/envs/mlenv/lib/python3.9/site-packages/sklearn/impute/_base.py\", line 50, in _most_frequent\n    most_frequent_value = mode[0][0]\nIndexError: invalid index to scalar variable.\n",
+          "error": "IndexError('invalid index to scalar variable.')",
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        13,
+        "{\"task_id\": \"3c9b7185-9612-11ee-ae96-8c8d28aac698\"}",
+        0,
+        0.0
+      ],
+      [
+        0.17970925140932753,
+        6.943669557571411,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1702071594.4700994,
+        1702071601.452862,
+        {
+          "duration": 6.622877359390259,
+          "num_run": 14,
+          "train_loss": 6.439293542825909e-16,
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ]
+  ],
+  "config_origins": {
+    "1": "Initial design",
+    "2": "Initial design",
+    "3": "Initial design",
+    "4": "Initial design",
+    "5": "Initial design",
+    "6": "Initial design",
+    "7": "Initial design",
+    "8": "Initial design",
+    "9": "Initial design",
+    "10": "Initial design",
+    "11": "Initial design",
+    "12": "Initial design",
+    "13": "Initial design"
+  },
+  "configs": {
+    "1": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "no_preprocessing",
+      "regressor:__choice__": "random_forest",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "standardize",
+      "regressor:random_forest:bootstrap": "True",
+      "regressor:random_forest:criterion": "mse",
+      "regressor:random_forest:max_depth": "None",
+      "regressor:random_forest:max_features": 1.0,
+      "regressor:random_forest:max_leaf_nodes": "None",
+      "regressor:random_forest:min_impurity_decrease": 0.0,
+      "regressor:random_forest:min_samples_leaf": 1,
+      "regressor:random_forest:min_samples_split": 2,
+      "regressor:random_forest:min_weight_fraction_leaf": 0.0
+    },
+    "2": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "polynomial",
+      "regressor:__choice__": "random_forest",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "minmax",
+      "feature_preprocessor:polynomial:degree": 2,
+      "feature_preprocessor:polynomial:include_bias": "True",
+      "feature_preprocessor:polynomial:interaction_only": "True",
+      "regressor:random_forest:bootstrap": "False",
+      "regressor:random_forest:criterion": "mae",
+      "regressor:random_forest:max_depth": "None",
+      "regressor:random_forest:max_features": 0.6277363920171745,
+      "regressor:random_forest:max_leaf_nodes": "None",
+      "regressor:random_forest:min_impurity_decrease": 0.0,
+      "regressor:random_forest:min_samples_leaf": 6,
+      "regressor:random_forest:min_samples_split": 15,
+      "regressor:random_forest:min_weight_fraction_leaf": 0.0
+    },
+    "3": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "polynomial",
+      "regressor:__choice__": "gradient_boosting",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "median",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "none",
+      "feature_preprocessor:polynomial:degree": 2,
+      "feature_preprocessor:polynomial:include_bias": "False",
+      "feature_preprocessor:polynomial:interaction_only": "True",
+      "regressor:gradient_boosting:early_stop": "valid",
+      "regressor:gradient_boosting:l2_regularization": 0.0018018055158809108,
+      "regressor:gradient_boosting:learning_rate": 0.05048450688348591,
+      "regressor:gradient_boosting:loss": "least_squares",
+      "regressor:gradient_boosting:max_bins": 255,
+      "regressor:gradient_boosting:max_depth": "None",
+      "regressor:gradient_boosting:max_leaf_nodes": 3,
+      "regressor:gradient_boosting:min_samples_leaf": 1,
+      "regressor:gradient_boosting:scoring": "loss",
+      "regressor:gradient_boosting:tol": 1e-07,
+      "regressor:gradient_boosting:n_iter_no_change": 19,
+      "regressor:gradient_boosting:validation_fraction": 0.19819612428903174
+    },
+    "4": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "no_preprocessing",
+      "regressor:__choice__": "gradient_boosting",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "quantile_transformer",
+      "regressor:gradient_boosting:early_stop": "off",
+      "regressor:gradient_boosting:l2_regularization": 1.8428972335335263e-10,
+      "regressor:gradient_boosting:learning_rate": 0.012607824914758717,
+      "regressor:gradient_boosting:loss": "least_squares",
+      "regressor:gradient_boosting:max_bins": 255,
+      "regressor:gradient_boosting:max_depth": "None",
+      "regressor:gradient_boosting:max_leaf_nodes": 10,
+      "regressor:gradient_boosting:min_samples_leaf": 8,
+      "regressor:gradient_boosting:scoring": "loss",
+      "regressor:gradient_boosting:tol": 1e-07,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles": 952,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution": "uniform"
+    },
+    "5": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "select_rates_regression",
+      "regressor:__choice__": "ard_regression",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "robust_scaler",
+      "feature_preprocessor:select_rates_regression:alpha": 0.3621762718897781,
+      "feature_preprocessor:select_rates_regression:mode": "fwe",
+      "feature_preprocessor:select_rates_regression:score_func": "f_regression",
+      "regressor:ard_regression:alpha_1": 2.7664515192592053e-05,
+      "regressor:ard_regression:alpha_2": 9.504988116581138e-07,
+      "regressor:ard_regression:fit_intercept": "True",
+      "regressor:ard_regression:lambda_1": 6.50650698230178e-09,
+      "regressor:ard_regression:lambda_2": 4.238533890074848e-07,
+      "regressor:ard_regression:n_iter": 300,
+      "regressor:ard_regression:threshold_lambda": 78251.58542976103,
+      "regressor:ard_regression:tol": 0.0007301343236220855,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_max": 0.8057830372269097,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_min": 0.24982831110057324
+    },
+    "6": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "no_preprocessing",
+      "regressor:__choice__": "decision_tree",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "minmax",
+      "regressor:decision_tree:criterion": "mae",
+      "regressor:decision_tree:max_depth_factor": 0.2781806943014362,
+      "regressor:decision_tree:max_features": 1.0,
+      "regressor:decision_tree:max_leaf_nodes": "None",
+      "regressor:decision_tree:min_impurity_decrease": 0.0,
+      "regressor:decision_tree:min_samples_leaf": 17,
+      "regressor:decision_tree:min_samples_split": 7,
+      "regressor:decision_tree:min_weight_fraction_leaf": 0.0
+    },
+    "7": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "polynomial",
+      "regressor:__choice__": "ard_regression",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "standardize",
+      "feature_preprocessor:polynomial:degree": 2,
+      "feature_preprocessor:polynomial:include_bias": "True",
+      "feature_preprocessor:polynomial:interaction_only": "False",
+      "regressor:ard_regression:alpha_1": 0.0003701926442639788,
+      "regressor:ard_regression:alpha_2": 2.2118001735899097e-07,
+      "regressor:ard_regression:fit_intercept": "True",
+      "regressor:ard_regression:lambda_1": 1.2037591637980971e-06,
+      "regressor:ard_regression:lambda_2": 4.358378124977852e-09,
+      "regressor:ard_regression:n_iter": 300,
+      "regressor:ard_regression:threshold_lambda": 1136.5286041327277,
+      "regressor:ard_regression:tol": 0.021944240404849075
+    },
+    "8": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "polynomial",
+      "regressor:__choice__": "sgd",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "minmax",
+      "feature_preprocessor:polynomial:degree": 3,
+      "feature_preprocessor:polynomial:include_bias": "False",
+      "feature_preprocessor:polynomial:interaction_only": "False",
+      "regressor:sgd:alpha": 0.0006517033225329654,
+      "regressor:sgd:average": "False",
+      "regressor:sgd:fit_intercept": "True",
+      "regressor:sgd:learning_rate": "invscaling",
+      "regressor:sgd:loss": "epsilon_insensitive",
+      "regressor:sgd:penalty": "elasticnet",
+      "regressor:sgd:tol": 0.002431731981071206,
+      "regressor:sgd:epsilon": 0.012150149892783745,
+      "regressor:sgd:eta0": 0.016444224834275295,
+      "regressor:sgd:l1_ratio": 1.7462342366289323e-09,
+      "regressor:sgd:power_t": 0.21521743568582094
+    },
+    "9": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "no_preprocessing",
+      "regressor:__choice__": "libsvm_svr",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "none",
+      "regressor:libsvm_svr:C": 0.2031136218970144,
+      "regressor:libsvm_svr:epsilon": 0.340528001967228,
+      "regressor:libsvm_svr:kernel": "linear",
+      "regressor:libsvm_svr:max_iter": -1,
+      "regressor:libsvm_svr:shrinking": "False",
+      "regressor:libsvm_svr:tol": 4.070347915643521e-05
+    },
+    "10": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "polynomial",
+      "regressor:__choice__": "gaussian_process",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "minmax",
+      "feature_preprocessor:polynomial:degree": 3,
+      "feature_preprocessor:polynomial:include_bias": "True",
+      "feature_preprocessor:polynomial:interaction_only": "True",
+      "regressor:gaussian_process:alpha": 0.283161627129086,
+      "regressor:gaussian_process:thetaL": 7.245332579977274e-08,
+      "regressor:gaussian_process:thetaU": 36.28453043772396
+    },
+    "11": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "polynomial",
+      "regressor:__choice__": "gaussian_process",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "standardize",
+      "feature_preprocessor:polynomial:degree": 2,
+      "feature_preprocessor:polynomial:include_bias": "False",
+      "feature_preprocessor:polynomial:interaction_only": "False",
+      "regressor:gaussian_process:alpha": 0.035440248140559884,
+      "regressor:gaussian_process:thetaL": 1.142436233486746e-09,
+      "regressor:gaussian_process:thetaU": 2235.498740920408
+    },
+    "12": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "polynomial",
+      "regressor:__choice__": "gaussian_process",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "minmax",
+      "feature_preprocessor:polynomial:degree": 2,
+      "feature_preprocessor:polynomial:include_bias": "True",
+      "feature_preprocessor:polynomial:interaction_only": "True",
+      "regressor:gaussian_process:alpha": 0.037731974209709904,
+      "regressor:gaussian_process:thetaL": 5.002213042554931e-07,
+      "regressor:gaussian_process:thetaU": 22409.945864393645
+    },
+    "13": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "feature_agglomeration",
+      "regressor:__choice__": "extra_trees",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "robust_scaler",
+      "feature_preprocessor:feature_agglomeration:affinity": "euclidean",
+      "feature_preprocessor:feature_agglomeration:linkage": "ward",
+      "feature_preprocessor:feature_agglomeration:n_clusters": 31,
+      "feature_preprocessor:feature_agglomeration:pooling_func": "max",
+      "regressor:extra_trees:bootstrap": "False",
+      "regressor:extra_trees:criterion": "friedman_mse",
+      "regressor:extra_trees:max_depth": "None",
+      "regressor:extra_trees:max_features": 0.7612289466695656,
+      "regressor:extra_trees:max_leaf_nodes": "None",
+      "regressor:extra_trees:min_impurity_decrease": 0.0,
+      "regressor:extra_trees:min_samples_leaf": 1,
+      "regressor:extra_trees:min_samples_split": 2,
+      "regressor:extra_trees:min_weight_fraction_leaf": 0.0,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_max": 0.7010465420634562,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_min": 0.19032833128592427
+    }
+  }
+}
