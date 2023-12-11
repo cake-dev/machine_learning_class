@@ -14,17 +14,21 @@ if __name__ == '__main__':
     train = pd.read_csv('data/kaggle_train.csv')
     test = pd.read_csv('data/kaggle_test.csv')
 
+    # keep only our top 4 columns f4, f5, f1, f3
+    train = train[['id', 'target', 'f4', 'f5', 'f1', 'f3']]
+    test = test[['id', 'f4', 'f5', 'f1', 'f3']]
+
     X = train.drop(['target', 'id'], axis=1)
     y = train['target']
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
 
     automl = autosklearn.regression.AutoSklearnRegressor(
         time_left_for_this_task=7200,
         per_run_time_limit=360,
-        tmp_folder='../../Data/autosklearn_tmp',
+        tmp_folder='../../Data/autosklearn_tmp_2',
         resampling_strategy='cv',
         resampling_strategy_arguments={'folds': 5},
-        n_jobs=6,
+        n_jobs=8,
         memory_limit=None,
     )
     automl.fit(X_train, y_train)
@@ -43,3 +47,8 @@ if __name__ == '__main__':
 
     # inspect feature importance
     print(automl.get_models_with_weights())
+
+    # save predictions from best model(s)
+    predictions = automl.predict(test.drop('id', axis=1))
+    test['target'] = predictions
+    test[['id', 'target']].to_csv('data/autosklearn_predictions.csv', index=False)
