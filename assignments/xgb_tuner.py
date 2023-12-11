@@ -7,12 +7,16 @@ from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import GridSearchCV
 pd.set_option('display.max_columns', None)
 
+# timer
+import time
+start_time = time.time()
+
 train = pd.read_csv('data/kaggle_train.csv')
 test = pd.read_csv('data/kaggle_test.csv')
 
 # keep only our top 4 columns f4, f5, f1, f3
-train = train[['id', 'target', 'f4', 'f5', 'f1', 'f3']]
-test = test[['id', 'f4', 'f5', 'f1', 'f3']]
+# train = train[['id', 'target', 'f4', 'f5', 'f1', 'f3']]
+# test = test[['id', 'f4', 'f5', 'f1', 'f3']]
 
 # split data into train and test sets
 X = train.drop(['target', 'id'], axis=1)
@@ -42,3 +46,6 @@ best_xgb = grid.best_estimator_
 y_pred = best_xgb.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 print('RMSE:', np.sqrt(mse))
+
+# timer
+print("--- %s seconds ---" % (time.time() - start_time))
