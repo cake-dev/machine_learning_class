@@ -2,3 +2,62 @@
 [WARNING] [2023-12-11 08:32:06,264:Client-EnsembleBuilder] No runs were available to build an ensemble from
 [WARNING] [2023-12-11 09:22:01,147:Client-EnsembleBuilder] No runs were available to build an ensemble from
 [WARNING] [2023-12-11 09:22:03,144:Client-EnsembleBuilder] No runs were available to build an ensemble from
+RMSE: 1.4810243336732034
+{516: {'model_id': 516, 'rank': 1, 'cost': 0.036021712214065985, 'ensemble_weight': 0.36, 'voting_model': VotingRegressor(estimators=None), 'estimators': [{'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7fd3d5b534c0>, 'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7fd2f13de670>, 'regressor': <autosklearn.pipeline.components.regression.RegressorChoice object at 0x7fd2a20ca940>, 'sklearn_regressor': GaussianProcessRegressor(alpha=0.027739542248988423,
+                         kernel=RBF(length_scale=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]),
+                         n_restarts_optimizer=10, normalize_y=True,
+                         random_state=1)}, {'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7fd2fbf47550>, 'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7fd301fd9cd0>, 'regressor': <autosklearn.pipeline.components.regression.RegressorChoice object at 0x7fd2f8e12310>, 'sklearn_regressor': GaussianProcessRegressor(alpha=0.027739542248988423,
+                         kernel=RBF(length_scale=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]),
+                         n_restarts_optimizer=10, normalize_y=True,
+                         random_state=1)}, {'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7fd2e38e0fd0>, 'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7fd2f98280a0>, 'regressor': <autosklearn.pipeline.components.regression.RegressorChoice object at 0x7fd2f9828670>, 'sklearn_regressor': GaussianProcessRegressor(alpha=0.027739542248988423,
+                         kernel=RBF(length_scale=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]),
+                         n_restarts_optimizer=10, normalize_y=True,
+                         random_state=1)}, {'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7fd2f95b4520>, 'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7fd2fbf458b0>, 'regressor': <autosklearn.pipeline.components.regression.RegressorChoice object at 0x7fd2f3dc95b0>, 'sklearn_regressor': GaussianProcessRegressor(alpha=0.027739542248988423,
+                         kernel=RBF(length_scale=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]),
+                         n_restarts_optimizer=10, normalize_y=True,
+                         random_state=1)}, {'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7fd2f24cd2e0>, 'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7fd2f87a95b0>, 'regressor': <autosklearn.pipeline.components.regression.RegressorChoice object at 0x7fd2f87a9400>, 'sklearn_regressor': GaussianProcessRegressor(alpha=0.027739542248988423,
+                         kernel=RBF(length_scale=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]),
+                         n_restarts_optimizer=10, normalize_y=True,
+                         random_state=1)}]}, 1147: {'model_id': 1147, 'rank': 2, 'cost': 0.03578373003032973, 'ensemble_weight': 0.64, 'voting_model': VotingRegressor(estimators=None), 'estimators': [{'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7fd3d59e9970>, 'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7fd2a090fb50>, 'regressor': <autosklearn.pipeline.components.regression.RegressorChoice object at 0x7fd2e24c9430>, 'sklearn_regressor': GaussianProcessRegressor(alpha=0.02178324916629305,
+                         kernel=RBF(length_scale=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]),
+                         n_restarts_optimizer=10, normalize_y=True,
+                         random_state=1)}, {'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7fd2e815d070>, 'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7fd3084d6700>, 'regressor': <autosklearn.pipeline.components.regression.RegressorChoice object at 0x7fd2f19d61f0>, 'sklearn_regressor': GaussianProcessRegressor(alpha=0.02178324916629305,
+                         kernel=RBF(length_scale=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]),
+                         n_restarts_optimizer=10, normalize_y=True,
+                         random_state=1)}, {'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7fd2f9048e80>, 'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7fd2f3dc9fa0>, 'regressor': <autosklearn.pipeline.components.regression.RegressorChoice object at 0x7fd2f3dc91c0>, 'sklearn_regressor': GaussianProcessRegressor(alpha=0.02178324916629305,
+                         kernel=RBF(length_scale=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]),
+                         n_restarts_optimizer=10, normalize_y=True,
+                         random_state=1)}, {'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7fd2f8003400>, 'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7fd301dccb20>, 'regressor': <autosklearn.pipeline.components.regression.RegressorChoice object at 0x7fd301dcccd0>, 'sklearn_regressor': GaussianProcessRegressor(alpha=0.02178324916629305,
+                         kernel=RBF(length_scale=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]),
+                         n_restarts_optimizer=10, normalize_y=True,
+                         random_state=1)}, {'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7fd30121afd0>, 'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7fd3d2d4d7c0>, 'regressor': <autosklearn.pipeline.components.regression.RegressorChoice object at 0x7fd3d2d4d130>, 'sklearn_regressor': GaussianProcessRegressor(alpha=0.02178324916629305,
+                         kernel=RBF(length_scale=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]),
+                         n_restarts_optimizer=10, normalize_y=True,
+                         random_state=1)}]}}
+auto-sklearn results:
+  Dataset name: 5d439793-9841-11ee-97a0-408d5ce12680
+  Metric: r2
+  Best validation score: 0.964216
+  Number of target algorithm runs: 1267
+  Number of successful target algorithm runs: 820
+  Number of crashed target algorithm runs: 446
+  Number of target algorithms that exceeded the time limit: 1
+  Number of target algorithms that exceeded the memory limit: 0
+
+          rank  ensemble_weight              type      cost   duration
+model_id                                                              
+1147         1             0.64  gaussian_process  0.035784  26.694593
+516          2             0.36  gaussian_process  0.036022  19.883671
+[(0.64, SimpleRegressionPipeline({'data_preprocessor:__choice__': 'feature_type', 'feature_preprocessor:__choice__': 'polynomial', 'regressor:__choice__': 'gaussian_process', 'data_preprocessor:feature_type:numerical_transformer:imputation:strategy': 'mean', 'data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__': 'standardize', 'feature_preprocessor:polynomial:degree': 3, 'feature_preprocessor:polynomial:include_bias': 'True', 'feature_preprocessor:polynomial:interaction_only': 'False', 'regressor:gaussian_process:alpha': 0.02178324916629305, 'regressor:gaussian_process:thetaL': 1.7365827178397013e-09, 'regressor:gaussian_process:thetaU': 2761.465085793221},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multioutput': False,
+  'target_type': 'regression',
+  'signed': False})), (0.36, SimpleRegressionPipeline({'data_preprocessor:__choice__': 'feature_type', 'feature_preprocessor:__choice__': 'polynomial', 'regressor:__choice__': 'gaussian_process', 'data_preprocessor:feature_type:numerical_transformer:imputation:strategy': 'most_frequent', 'data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__': 'standardize', 'feature_preprocessor:polynomial:degree': 3, 'feature_preprocessor:polynomial:include_bias': 'True', 'feature_preprocessor:polynomial:interaction_only': 'False', 'regressor:gaussian_process:alpha': 0.027739542248988423, 'regressor:gaussian_process:thetaL': 1.277163094082138e-08, 'regressor:gaussian_process:thetaU': 1753.2090192261294},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multioutput': False,
+  'target_type': 'regression',
+  'signed': False}))]
