@@ -19,15 +19,15 @@ xgb = XGBRegressor(random_state=42)
 
 # grid search on xgb
 params = {
-    'n_estimators': [100, 200, 300, 400, 500],
+    'n_estimators': [200, 500],
     'learning_rate': [0.01, 0.1, 0.2],
-    'max_depth': [1, 2, 3, 4, 5],
-    'min_child_weight': [1, 2, 3],
-    'gamma': [0, 0.1, 0.2],
+    'max_depth': [1, 2, 3],
+    'min_child_weight': [1, 2],
+    'gamma': [0, 0.1],
     'subsample': [0.5, 0.75, 1],
     'colsample_bytree': [0.5, 0.75, 1],
-    'reg_alpha': [0, 0.1, 0.2],
-    'reg_lambda': [0, 0.1, 0.2]
+    'reg_alpha': [0, 0.1],
+    'reg_lambda': [0, 0.1]
 }
 grid = GridSearchCV(estimator=xgb, param_grid=params, scoring='neg_mean_squared_error', cv=5, verbose=1)
 # grid = RandomizedSearchCV(estimator=xgb, param_distributions=params, scoring='neg_mean_squared_error', cv=5, verbose=1)
