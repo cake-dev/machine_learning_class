@@ -25,7 +25,7 @@ if __name__ == '__main__':
     automl = autosklearn.regression.AutoSklearnRegressor(
         time_left_for_this_task=7200,
         per_run_time_limit=360,
-        tmp_folder='../../Data/autosklearn_tmp_2',
+        tmp_folder='../../Data/autosklearn_tmp_3',
         resampling_strategy='cv',
         resampling_strategy_arguments={'folds': 5},
         n_jobs=8,

@@ -17,7 +17,7 @@ test = test[['id', 'f4', 'f5', 'f1', 'f3']]
 # split data into train and test sets
 X = train.drop(['target', 'id'], axis=1)
 y = train['target']
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 xgb = XGBRegressor(random_state=42)
 
@@ -29,7 +29,7 @@ params = {
     'min_child_weight': [1, 2],
     'gamma': [0, 0.1],
     'subsample': [0.75, 1, 1.25],
-    'colsample_bytree': [0.5, 0.75, 1],
+    'colsample_bytree': [0.1, 0.25, 0.5, 0.75, 1],
     'reg_alpha': [0, 0.1, 0.5],
     'reg_lambda': [0, 0.1, 0.5]
 }
