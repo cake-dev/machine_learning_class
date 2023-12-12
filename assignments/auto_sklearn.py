@@ -14,13 +14,13 @@ if __name__ == '__main__':
     train = pd.read_csv('data/kaggle_train.csv')
     test = pd.read_csv('data/kaggle_test.csv')
 
-    # keep only our top 4 columns f4, f5, f1, f3
-    train = train[['id', 'target', 'f4', 'f5', 'f1', 'f3']]
-    test = test[['id', 'f4', 'f5', 'f1', 'f3']]
+    # keep only our top correlated features
+    train = train[['f5','f10','f3','f8','f4','f9','f1','f6','id','target']]
+    test = test[['f5','f10','f3','f8','f4','f9','f1','f6','id']]
 
     X = train.drop(['target', 'id'], axis=1)
     y = train['target']
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
     automl = autosklearn.regression.AutoSklearnRegressor(
         time_left_for_this_task=7200,
